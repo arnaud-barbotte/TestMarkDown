@@ -16,7 +16,7 @@ script.onload = function() {
     if (page) {
         page = "pages/" + page + ".md"
     } else {
-        page = "index.md"; //"README.md"; // or index.md ???
+        page = "README.md"; // or index.md ???
     }
 
     var client = new XMLHttpRequest();
