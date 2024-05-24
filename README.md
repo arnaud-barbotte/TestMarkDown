@@ -1,73 +1,71 @@
+---
+Title:	Website  
+Author: Arnaud BARBOTTE	
+Creator: Arnaud  
+Date:	May 23, 2024 
+Tags: [Markdown, tags]  
+Category: productivity  
+Subject: WebSite NewGen
+---
 
-![markdown logo](assets/images/mdp.svg)
 
-# markdown-pages.js - _simple Markdown-based static sites, without the generator_
+[Hello](#hello) | [This is world](#Test) | [Test Me](#Here) | [Contact](#contact)
 
-_`Last Updated: 5/1/2024`_ [`edit`](https://github.com/dandalpiaz/markdown-pages/edit/main/README.md)
+### [HELLO](#hello)
+Hello
+test github desktop
 
-Use **markdown-pages.js** to create simple websites using [Markdown](https://www.markdownguide.org/basic-syntax/) files for page content. No site generator necessary - no build process, installs, etc. Client side JavaScript handles the Markdown to HTML conversion. Content files can be edited directly where they are hosted! Check out the **[GitHub ![GitHub Logo](assets/images/github.png) repository](https://github.com/dandalpiaz/markdown-pages)**!
+### [THIS IS WORLD](#Test)
 
-## Table of Contents
 
-- [Quick Start](#quick-start)
-- [Markdown Options](#markdown-options)
-- [Deployment](#deployment)
-- [User Styles & Scripts](#user-styles--scripts)
-- [Limitations](#limitations)
-
-## Quick Start
-
-To use the library, simply add the JavaScript file in the `<head>` section of your `index.html` file and create empty `<header>`, `<main>`, and `<footer>` elements.
-
-```
-<!doctype html>
-<html lang="en">
-<head>
-  ...
-  <script src="https://cdn.jsdelivr.net/gh/dandalpiaz/markdown-pages.js@1.0.0/markdown-pages.js"></script>
-</head>
-<body>
-	<header></header><!-- optional -->
-	<main></main>
-	<footer></footer><!-- optional -->
-</body>
-</html>
-```
-
-Start from a fork of [markdown-pages.js](https://github.com/dandalpiaz/markdown-pages), or, use the CDN link like the snippet above. The library will use the `README.md` file for the homepage content. Optionally, a `header.md` and `footer.md` file can be created to populate those sections. All other pages should be stored in a `pages` directory. For example, a file at `pages/sample-page.md` can be linked to as follows:
+# Git Command
+Some basic Git commands are:
 
 ```
-Check out the [sample page](?page=sample-page)
+git status
+git add
+git commit
+```
+The background color is `#ffffff` for light mode and `#000000` for dark mode.
+
+# Some Stuff Here
+![Image](https://commonmark.org/help/images/favicon.png)
+
+* list
+* list 2 
+* list 3
+
+1. ordered list
+2. another 
+3. … 
+
+test menu 
+
+* Menu
+  1. Sub menu
+  2. second
+* Menu 2 
+  - another bullet point
+  - second one
+
+
+Inline `code`
+
+    indent code '4spaces'
+    
+~~~
+~ code tilt ~
+~~~
+```
+jamf recon -assettag
+jamf policy
+jamf recon
+jamf policy -id "xxx"
 ```
 
-**Check out the [sample page](?page=sample-page)** (link will work on the rendered site, not github.com).
 
-_Note: if you need to use HTML elements that don't have a Markdown equivalent, you can simply add the HTML in the Markdown file. It will be ignored by the converter and kept as-is._
-
-## Markdown Options
-
-The library uses the [Showdown JS](https://showdownjs.com/) converter which provides some extra options for how the Markdown content will be converted. The following [Showdown options](https://showdownjs.com/docs/available-options/) are active for this library:
-
-```
-conv.setOption('tables', 'true');
-conv.setOption('emoji', 'true');
-conv.setOption('ghCompatibleHeaderId', 'true');
-conv.setOption('simpleLineBreaks', 'true');
-conv.setOption('strikethrough', 'true');
-conv.setOption('tasklists', 'true');
-conv.setOption('parseImgDimensions', 'true');
-```
-
-## Deployment
-
-The library can be used anywhere that web files are hosted - a traditional server, an object storage bucket like AWS s3, etc. Part of the aim of this project was to avoid the dependency of a static site generator, but [GitHub Pages](https://docs.github.com/en/pages/quickstart) remains a convenient option to host files. 
-
-## User Styles & Scripts
-
-The example site includes styles from the [Pico CSS](https://picocss.com/) framework and some custom styles via a `user-styles.css` file. This and [other classless CSS frameworks](https://dohliam.github.io/dropin-minimal-css/) work well with Markdown content. The example site also includes a dark/light mode toggle and code syntax highlighting via a `user-scripts.js` file.
-
-## Limitations
-
-- **URL Structure** - since all work is done on the client side with the `index.html` file, a nested URL structure (e.g. /directory1/directory2/page) is not possible. Instead pages are referenced by a query parameter (/?page=file-name).
-- **Local Development** - since the site uses XMLHttpRequest to grab content, a local web server will be needed if you want to test things locally, e.g. `python -m http.server`. However, editing hosted files directly is part of the convenience/fun. 
-- **Custom layouts** - Markdown used in this way is fairly linear, so custom layouts won't be possible without adding additional HTML in the pages.
+---
+### [Contact](#contact)
+![logo](assets/AB.png) | [✉️](mailto:arnobarbotte@gmail.com) | [📱](tel:+33688225022) | [🔗](https://fr.linkedin.com/in/arnaudbarbotte) | Arnaud ®  Written in markdown.
+-
+[☝️](#hello)
