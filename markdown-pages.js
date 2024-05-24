@@ -16,7 +16,7 @@ script.onload = function() {
     if (page) {
         page = "pages/" + page + ".md"
     } else {
-        page = "README.md"; // or index.md ???
+        page = "index.md" //"README.md"; // or index.md ???
     }
 
     var client = new XMLHttpRequest();
@@ -41,7 +41,7 @@ script.onload = function() {
                     var hash = window.location.hash;
                     if (hash && document.getElementById(hash.substring(1))) {
                         document.getElementById(hash.substring(1)).scrollIntoView();
-                    }			
+                    }
                 }, 50);
             }
         } else if (client.status == 404) {
@@ -63,9 +63,9 @@ script.onload = function() {
                 conv.setOption('strikethrough', 'true');
                 conv.setOption('tasklists', 'true');
                 conv.setOption('parseImgDimensions', 'true');
-                document.querySelector('header').innerHTML = conv.makeHtml(client1.responseText);                
+                document.querySelector('header').innerHTML = conv.makeHtml(client1.responseText);
             }
-        } 
+        }
     }
     client1.send();
 
@@ -82,9 +82,9 @@ script.onload = function() {
                 conv.setOption('strikethrough', 'true');
                 conv.setOption('tasklists', 'true');
                 conv.setOption('parseImgDimensions', 'true');
-                document.querySelector('footer').innerHTML = conv.makeHtml(client2.responseText);                
+                document.querySelector('footer').innerHTML = conv.makeHtml(client2.responseText);
             }
-        } 
+        }
     }
     client2.send();
 };
